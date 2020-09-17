@@ -1,0 +1,147 @@
+body{
+  background-color: black;
+  position: relative;
+  font-family: sans-serif "Open sans";
+}
+
+#menu{
+  background-color: black;
+}
+
+.prvi{
+  background-color: black;
+  height: 60%;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about{
+  padding-top:50px;
+  height:600px;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+.bend{
+  border: 1px solid black;
+  border-width: thick;
+}
+
+.tekst{
+  text-align: center;
+  color: white;
+  border-color: black;
+  background-color: black;
+  }
+
+#albums{
+  padding-top:50px;
+  height:1000px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.poseban{
+  text-align: center;
+}
+
+.slika1{
+  height: 200px;
+  width: 200px;
+}
+
+.tablica{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2em;
+}
+
+.slika{
+  height: 150px;
+  height: 150px;
+}
+
+figcaption{
+  color: white;
+}
+
+#tour{
+  padding-top:50px;
+  height:500px;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+hr{
+  background-color: black;
+  color: black;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   height: 6%;
+}
+
+.social{
+  height: 30px;
+  width: 30px;
+}
+
+.social2{
+  vertical-align: middle;
+    display: inline-block;
+    margin: 0.5% 15px 0 0;
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+
+}
